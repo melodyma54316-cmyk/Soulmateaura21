@@ -529,9 +529,16 @@ details[open] .icon::after {
 
 /* --- 手機版 RWD 設定 (1024px 以下) --- */
 @media (max-width: 1024px) {
-  .hero-text h1 { font-size: 3.5rem; }
-  .journey-container { flex-direction: column; gap: 40px; }
-  .journey-mockup { margin-right: 0; } /* 移除負邊距，避免內容超出螢幕 */
+  .hero-text h1 { 
+    font-size: 3.5rem; 
+  }
+  .journey-container { 
+    flex-direction: column; 
+    gap: 40px; 
+  }
+  .journey-mockup { 
+    margin-right: 0;
+   } 
 }
 
 
@@ -673,7 +680,7 @@ details[open] .icon::after {
   /* 5. Journey Section */
   .journey-section {
     padding: 60px 0;
-    overflow: hidden; /* 絕對必要：防止右側出現空白捲軸 */
+    overflow: hidden;
     position: relative;
   }
 
@@ -681,13 +688,13 @@ details[open] .icon::after {
     padding: 0 5%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* 文字與圈圈靠左 */
+    align-items: flex-start;
     position: relative;
-    min-height: 500px; /* 給予足夠高度，防止手機壓到下一個 Section */
+    min-height: 500px; 
   }
 
   .journey-content {
-    width: 55%; /* 限制文字寬度，留出右側給手機 */
+    width: 55%;
     text-align: left;
     z-index: 2;
   }
